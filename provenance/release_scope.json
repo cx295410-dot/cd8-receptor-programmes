@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-27",
+  "repository": "cx295410-dot/cd8-receptor-programmes",
+  "visibility": "public",
+  "source_scripts": 48,
+  "source_copies_byte_preserving": true,
+  "included": "Analysis/download/plotting/verification code and fixed definitions only",
+  "excluded": [
+    "raw/derived individual data",
+    "manuscripts and author forms",
+    "images and PDF figures",
+    "third-party software",
+    "credentials"
+  ],
+  "full_analysis_rerun_during_packaging": false
+}

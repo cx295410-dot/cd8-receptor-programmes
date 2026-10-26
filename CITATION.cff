@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the exact repository commit used for your analysis."
+type: software
+title: "CD8 receptor programmes during cancer immunotherapy analysis code"
+authors:
+  - family-names: Chen
+    given-names: Xiang
+  - family-names: Yan
+    given-names: Guangze
+  - family-names: Chen
+    given-names: Sishuo
+  - family-names: Liang
+    given-names: Boyuan
+  - family-names: Jin
+    given-names: Yidan
+repository-code: "https://github.com/cx295410-dot/cd8-receptor-programmes"
+date-released: "2026-10-27"

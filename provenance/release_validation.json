@@ -1,0 +1,14 @@
+{
+  "checked_date": "2026-10-27",
+  "source_scripts": 48,
+  "all_python_files_syntax_valid": 50,
+  "source_hashes_match": true,
+  "fixed_target_count": 24,
+  "programme_marker_count": 38,
+  "target_marker_overlap": 0,
+  "known_credential_patterns_detected": 0,
+  "email_addresses_detected": 0,
+  "patient_level_helper_tests_passed": 9,
+  "configurable_staging_scripts_checked": 48,
+  "full_scientific_analysis_rerun": false
+}

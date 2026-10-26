@@ -1,0 +1,88 @@
+{
+  "programmes": {
+    "Memory": [
+      "TCF7",
+      "LEF1",
+      "CCR7",
+      "SELL",
+      "MAL",
+      "LTB"
+    ],
+    "Cytotoxic": [
+      "NKG7",
+      "GNLY",
+      "PRF1",
+      "GZMB",
+      "GZMH",
+      "FGFBP2",
+      "CTSW"
+    ],
+    "Dysfunction": [
+      "CXCL13",
+      "TOX",
+      "TOX2",
+      "LAYN",
+      "PRDM1",
+      "BATF"
+    ],
+    "Cycling": [
+      "MKI67",
+      "TOP2A",
+      "STMN1",
+      "TYMS",
+      "UBE2C",
+      "PCNA"
+    ],
+    "Interferon": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "MX1",
+      "OAS1",
+      "IFI6",
+      "STAT1"
+    ],
+    "Residency": [
+      "ZNF683",
+      "ITGA1",
+      "CD69",
+      "RUNX3",
+      "RGS1"
+    ]
+  },
+  "marker_exclusion": [
+    "PDCD1",
+    "LAG3",
+    "HAVCR2",
+    "TIGIT",
+    "CTLA4",
+    "BTLA",
+    "CD160",
+    "VSIR",
+    "ENTPD1",
+    "NT5E",
+    "ADORA2A",
+    "TNFRSF9",
+    "TNFRSF4",
+    "TNFRSF18",
+    "ICOS",
+    "CD27",
+    "CD28",
+    "CXCR6",
+    "ITGAE",
+    "IL7R",
+    "IL2RA",
+    "CCR8",
+    "CD38",
+    "SLAMF6"
+  ],
+  "score": "Mean of within-cohort gene z scores of log1p(CP10k), clipped to [-3,3]; at least half markers measured",
+  "classification": "largest score >=0.25 and top-second margin >=0.10, otherwise Mixed",
+  "neighbours": 15,
+  "PCs": 30,
+  "HVGs": 2000,
+  "Leiden_resolution": 0.6,
+  "seed": 20261026,
+  "exploratory": true
+}

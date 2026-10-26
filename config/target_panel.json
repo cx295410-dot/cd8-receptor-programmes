@@ -1,0 +1,9 @@
+{
+  "frozen_date": "2026-10-25",
+  "targets": ["PDCD1", "LAG3", "HAVCR2", "TIGIT", "CTLA4", "BTLA", "CD160", "VSIR", "ENTPD1", "NT5E", "ADORA2A", "TNFRSF9", "TNFRSF4", "TNFRSF18", "ICOS", "CD27", "CD28", "CXCR6", "ITGAE", "IL7R", "IL2RA", "CCR8", "CD38", "SLAMF6"],
+  "primary_min_cells": 20,
+  "sensitivity_min_cells": [10, 50],
+  "bootstrap_replicates": 5000,
+  "seed": 20261025,
+  "study_type": "retrospective computational evidence mapping"
+}

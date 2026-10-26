@@ -1,0 +1,17 @@
+{
+  "status": "fixed before fitting",
+  "primary_patients": 13,
+  "excluded_patients": [
+    "MD01-004",
+    "MD01-005"
+  ],
+  "unassigned_author_tumor_CD8": 2602,
+  "endpoint": "residual viable tumour fraction 0 to 1",
+  "planned_design": "~ source_prefix + residual_fraction",
+  "fallback": "unadjusted only if adjusted design not full rank or residual df <5",
+  "count_filter": "raw UMI >=10 in at least max(3,ceil(n_primary/4)) primary patients",
+  "BH": "all genes passing fixed count filter; nonfinite p count in denominator and retain NA",
+  "GSEA_seed": 20261026,
+  "GSEA_permutations": 1000,
+  "model_tuning": false
+}
