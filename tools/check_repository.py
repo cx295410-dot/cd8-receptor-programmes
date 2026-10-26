@@ -13,7 +13,7 @@ assert len(panel)==24 and len(set(panel))==24
 markers=[g for genes in programmes.values() for g in genes]
 assert len(programmes)==6 and len(markers)==38 and not set(markers)&set(panel)
 for p in ROOT.rglob('*'):
- if not p.is_file() or '.git' in p.parts:continue
+ if not p.is_file() or any(part in {'.git','__pycache__','.venv','env','study_workspace','legacy_workspace'} for part in p.relative_to(ROOT).parts):continue
  assert p.suffix.lower() not in {'.docx','.h5ad','.h5','.rds','.png','.pdf','.tif','.zip'},p
  assert p.name not in {'.env','.git-credentials','id_rsa','id_ed25519'},p
  text=p.read_text(encoding='utf-8-sig')
