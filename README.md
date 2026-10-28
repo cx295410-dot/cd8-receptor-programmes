@@ -20,9 +20,11 @@ The study compares receptor-independent transcriptional programmes with receptor
 
 ## Public sources
 
-Original data remain in GEO: [GSE123813](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE123813), [GSE179994](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE179994), [GSE200996](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200996), [GSE267552](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267552), and [GSE176021](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176021). Source publications and input roles are listed in [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).
+Original data remain in GEO: [GSE123813](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE123813), [GSE179994](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE179994), [GSE200996](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200996), [GSE267552](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267552), [GSE176021](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176021), [GSE78220](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE78220), [GSE91061](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE91061), and [GSE135222](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135222). Source publications and input roles are listed in [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).
 
-This repository contains code and analytical definitions. It does not redistribute raw matrices, per-cell or patient tables, manuscripts, author contact forms, rendered figure plates or third-party packages. Derived result/source-table archives require a separate data deposit. No permanent data-repository DOI is implied by this GitHub code upload.
+This repository contains code and analytical definitions. The separate [aggregate data release v1.0.0](https://github.com/cx295410-dot/cd8-receptor-programmes/releases/tag/data-v1.0.0) contains group-, gene- and pathway-level estimates, eligible summary matrices and the complete clinical endpoint results. Download both Supplementary Data ZIP files and the README; manifests and SHA256 checksums are provided. The published version is immutable and corresponds to analysis commit `5ecda74e61bb768b6c52d344b028aa84bb108db9`. It has a version-specific public URL and no assigned DOI.
+
+The public data release excludes patient-, donor-, cell- and clonotype-level derived tables, individual outcome records and individual expression/count matrices. It does not redistribute original article PDFs, author contact forms, authentication material or third-party packages. The aggregate deposit alone does not reproduce every individual-level analysis or plot; use the cited original public sources and the code documentation for the required local intermediate tables.
 
 ## Start here
 
@@ -40,7 +42,7 @@ The staging command performs no analysis and downloads no data. Remove `--dry-ru
 
 ## Interpretation
 
-Patients define biological replication. Memory, Dysfunction and the other programme names are operational transcript-feature labels. Clone sharing is observed repertoire overlap, not a differentiation trajectory. Experimental MANA/viral labels originate from the source study and are not inferred for untested clones. The clinical endpoint is residual viable tumour percentage at surgery, not tumour diameter or pretreatment prediction. The Gender-adjusted genome-wide model is a separately specified post hoc sensitivity. Complete testing families and nonsignificant results should be retained when reproducing the study.
+Patients define biological replication. Memory, Dysfunction and the other programme names are operational transcript-feature labels. Clone sharing is observed repertoire overlap, not a differentiation trajectory. Experimental MANA/viral labels originate from the source study and are not inferred for untested clones. The primary pathology endpoint is residual viable tumour percentage at surgery. Separate exploratory baseline bulk analyses examine objective response in GSE78220 and GSE91061, overall survival in GSE78220 and progression-free survival in GSE135222. None of the 24 programme–endpoint tests, or the separate eight-test Memory/Dysfunction family, met BH q < 0.05; these are association analyses and do not establish a validated clinical prediction model. The Gender-adjusted genome-wide model is a separately specified post hoc sensitivity. Complete testing families and nonsignificant results should be retained when reproducing the study.
 
 ## Citation and licensing
 
